@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profile Card</title>
 
-		<title>Card</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Cairo:300,400,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- CARD -->
+    <div class="card">
+      <!-- IMAGE START -->
+      <div class="image-box">
+        <img class="profile-image" src="./img/avatar.jpg" alt="Image" />
+      </div>
+      <!-- IMAGE END -->
 
-		<link
-			href="https://fonts.googleapis.com/css?family=Cairo:200,300,regular,600,700,900"
-			rel="stylesheet"
-		/>
+      <!-- BOTTOM START -->
+      <div class="bottom">
+        <!-- BTN START -->
+        <div class="btn">
+          <div class="btn-text"><span>More</span><span>Close</span></div>
+        </div>
+        <!-- BTN END -->
+        <div class="name">John Doe</div>
+        <div class="designation">Web Developer</div>
+      </div>
+      <!-- BOTTOM END -->
 
-		<link rel="stylesheet" href="style.css" />
-		<script defer src="https://kit.fontawesome.com/fb47a20344.js"></script>
-		<script defer src="script.js"></script>
-	</head>
-	<body>
-		<div class="card">
-			<div class="image">
-				<img src="hirok.jpg" alt="" />
-				<div class="social">
-					<p>Follow me</p>
-					<div class="social-links">
-						<a href="https://facebook.com/hirokbanik"
-							><i class="fab fa-facebook-square fa-3x"></i
-						></a>
-						<a href="https://twitter.com/hirokbanik"
-							><i class="fab fa-twitter fa-3x"></i
-						></a>
-						<a href="https://instagram.com/hirokbanik"
-							><i class="fab fa-instagram fa-3x"></i
-						></a>
-					</div>
-				</div>
-			</div>
-			<div class="bottom">
-				<div class="btn">
-					<span class="btn-text"><span>More</span><span>Close</span></span>
-				</div>
-				<div class="name">Hirok Banik</div>
-				<div class="designation">UI Designer</div>
-			</div>
-		</div>
-	</body>
+      <!-- SOCIAL START -->
+      <div class="social">
+        <p>Follow me</p>
+        <div class="social-links">
+          <a href="https://facebook.com/username">
+            <img src="./img/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://twitter.com/username">
+            <img src="./img/twitter.svg" alt="Twitter" />
+          </a>
+          <a href="https://instagram.com/username">
+            <img src="./img/instagram.svg" alt="Instagram" />
+          </a>
+        </div>
+        <a class="email" href="mailto:youremail@gamil.com">Email</a>
+      </div>
+      <!-- SOCIAL END -->
+    </div>
+  </body>
 </html>
